@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 180 10% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 180 10% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 180 10% 10%;
+
+    --primary: 168 80% 32%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 168 30% 95%;
+    --secondary-foreground: 168 80% 25%;
+
+    --muted: 168 15% 96%;
+    --muted-foreground: 180 5% 45%;
+
+    --accent: 168 30% 93%;
+    --accent-foreground: 168 80% 25%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 168 15% 90%;
+    --input: 168 15% 88%;
+    --ring: 168 80% 32%;
+
+    --radius: 0.625rem;
+
+    --sidebar-background: 168 40% 15%;
+    --sidebar-foreground: 168 10% 95%;
+    --sidebar-primary: 168 80% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 168 30% 22%;
+    --sidebar-accent-foreground: 168 10% 95%;
+    --sidebar-border: 168 25% 25%;
+    --sidebar-ring: 168 80% 50%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+  }
+
+  .dark {
+    --background: 180 10% 6%;
+    --foreground: 168 10% 95%;
+
+    --card: 180 10% 8%;
+    --card-foreground: 168 10% 95%;
+
+    --popover: 180 10% 8%;
+    --popover-foreground: 168 10% 95%;
+
+    --primary: 168 80% 42%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 168 20% 15%;
+    --secondary-foreground: 168 10% 90%;
+
+    --muted: 168 15% 14%;
+    --muted-foreground: 168 10% 60%;
+
+    --accent: 168 20% 18%;
+    --accent-foreground: 168 10% 90%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 168 15% 18%;
+    --input: 168 15% 18%;
+    --ring: 168 80% 42%;
+
+    --sidebar-background: 180 10% 5%;
+    --sidebar-foreground: 168 10% 90%;
+    --sidebar-primary: 168 80% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 168 20% 12%;
+    --sidebar-accent-foreground: 168 10% 90%;
+    --sidebar-border: 168 15% 15%;
+    --sidebar-ring: 168 80% 50%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
